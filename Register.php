@@ -40,7 +40,7 @@ padding: 8px;}
         $email = $_POST["email"];
         $password = $_POST["password"];
         mysqli_query($success, "INSERT INTO `user`.`tab123` (username, email, password) VALUES ('$username', '$email', '$password')") or die("Mysql error: " . mysqli_error());
-       // $result=mysqli_prepare($query) or die("Mysql error: " . mysqli_error());      
+          
     }
         mysqli_close();
 ?>
